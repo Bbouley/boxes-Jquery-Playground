@@ -1,3 +1,8 @@
+
+h1{
+  color: black;
+}
+
 #container {
   background:rgb(255,255,153);
   height: 700px;
@@ -42,3 +47,4 @@
 .boxType3 {
   background: blue;
 }
+
