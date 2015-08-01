@@ -16,7 +16,25 @@ $(document).ready(function(){
   // // $('#container').not('#secretBox').not('.row').css('width', '2px');
 
   $('#container').on('click', function(event){
+
     console.log('x: ' + event.pageX + ', y: ' + event.pageY);
+    var target = $(event.target);
+
+    console.log(target);
+    console.log($(this));
+
+   if (target.is($(this))){
+
+    $(this).css('background', '#32cd32');
+
+   } else {
+
+   $(this).css('background', 'white');
+
+   target.css('background', 'black');
+ }
+
+
   });
 
 
